@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 @font-face {
 	font-family: samarkan_____normal;
 	src: url(./assets/fonts/SAMAN___.TTF);
@@ -168,59 +169,15 @@ canvas{
 /*--------------------*/
 /* ABOUT US */
 /*--------------------*/
-
-
 #rangrezz-about {
 	background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
 }
-
-.rangrezz-about-area {
-	display: inline;
-	float: left;
-	padding: 100px 0;
-	width: 100%;
+.master-box{
+	margin-top: -15vh;
 }
-
-.rangrezz-title-area {
-	display: inline;
-	float: center;
-	text-align: center;
-	padding: 0 120px;
-	width: 100%;
-}
-
-.rangrezz-title {
-	color: #1c1b1b;
-	margin-bottom: 15px;
-	padding: 0;
-	z-index: 10;
-	text-transform: capitalize;
-}
-
-.rangrezz-about-left {
-	display: inline;
-	float: left;
-	width: 100%;
-}
-
-.rangrezz-about-right {
-	display: inline;
-	float: center;
-	margin-top: 30px;
-	width: 100%;
-	font-family: 'Patrick Hand', cursive;
-	font-size:22px;
-	word-spacing: 1px;
-	letter-spacing: 0.4px;
-	font-weight:598; 
-	word-wrap:break-word;
-}
-
-
-
 /*--------------------*/
 /* VIDEO */
 /*--------------------*/
@@ -497,82 +454,50 @@ canvas{
 #rangrezz-minor-events {
 	background-color: #fff;
 	display: inline;
-	float: left;
-	width: 100%;
-	margin-top:-4%;
-}
-
-.rangrezz-speakers-area {
-	display: inline;
-	float: left;
-	padding: 100px 0;
 	width: 100%;
 }
-
 .rangrezz-speakers-content{
 	display: inline;
 	float: left;
 	margin-top: 50px;
 	width: 100%;
 }
-
+.minor{
+	margin-top: 8vh;
+}
 .rangrezz-single-speakers {
 	padding: 0 10px;
-	outline: none;
 	text-align: center;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-
-.rangrezz-speakers-slider .slick-next {
-	right: -60px;
+.rangrezz-single-speakers img{
+	height: 60vh;
 }
-
-.rangrezz-speakers-slider .slick-prev {
-	left: -60px;
+.slick-next {
+	right: -80px;
+	top:15vw;
 }
-
+.slick-prev {
+	left: -80px;
+	top:15vw;
+}
 .rangrezz-single-speakers-info {
-	display: inline;
-	float: left;
 	margin-top: 20px;
 	width: 100%;
+	color: #000000;
 }
-
 .rangrezz-single-speakers-info h3 {
-	margin-bottom: 4px;
-	font-size: 22px;
+	font-size: 4vh;
 }
-
-.rangrezz-single-speakers-info p {
-	margin-bottom: 5px;
-}
-
-
-
-.rangrezz-single-speakers-social li {
-	display: inline-block;
-}
-
-.rangrezz-single-speakers-social li a {
-	display: inline-block;
-	margin-right: 5px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-
 /*--------------------*/
 /* VENUE */
 /*--------------------*/
-
 #rangrezz-venue {
 	display: inline;
 	float: left;
 	width: 100%;
 }
-
 .rangrezz-venue-area {
 	display: inline;
 	float: left;
@@ -937,9 +862,11 @@ canvas{
 	display: inline;
 	float: left;
 	width: 100%;
-	margin-top:8%;
+	margin-top:0%;
 }
-
+.mc1{
+	margin-left: 4vw;
+}
 .title-area{
 	font-size:20px;
 	display: inline;
@@ -977,11 +904,26 @@ canvas{
 	background-color:#f09433;
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	color:white;
-}/*--------------------*/
+}
+.mc img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+.mc{
+	height: 420px;
+	width: 300px;
+	margin: 2%;
+	background: #eee;
+	border: 4px solid maroon;
+}
+/*--------------------*/
 /* RESPONSIVE STYLE */
 /*--------------------*/
-
 @media (max-width: 1199px) {
+	.mc{
+		width: 250px;
+	}
 	.rangrezz-register-content {
 		padding: 0 150px;
 	}
@@ -995,19 +937,23 @@ canvas{
 		right: 5%;
 		margin-top: 0;
 	}
-
-	.rangrezz-apps-screenshot-slider .slick-prev {
-		left: -25px;
-	}
-
-	.rangrezz-apps-screenshot-slider .slick-next {
-		right: -25px;
-	}		
 }
-
-@media (max-width: 991px) {	
-	.need{
-		padding-top:5vh;
+@media(max-width:1000px){
+	.master-box{
+		margin-top: -3vh;
+	}
+}
+@media (max-width: 991px){
+	
+	.rangrezz-social-media{
+		margin-left: 1vw;
+	}
+	.mc{
+		width:250px;
+		margin-left: 25vw;
+	}
+	.col-md-6{
+		margin-top: 2%;
 	}
 	.rangrezz-primary-btn {
 		font-size: 14px;
@@ -1081,15 +1027,6 @@ canvas{
 	.rangrezz-title-area {
 		padding: 0 50px;
 	}
-
-	.rangrezz-faq-content {
-		padding: 0;
-	}
-
-	.rangrezz-contact-right {
-		margin-top: 50px;
-	}
-
 	.rangrezz-menu-btn {
 		right: 5%;
 	}
@@ -1123,10 +1060,7 @@ canvas{
 
 	.rangrezz-single-price {
 		margin-bottom: 30px;
-	}
-
-
-		
+	}	
 }
 
 @media (max-width: 767px) {
@@ -1275,42 +1209,44 @@ canvas{
 	.rangrezz-schedule-menu li a {
 		font-size: 15px;
 	}
-
 	.rangrezz-event-timeline ul li {
 		margin-left: 5%;
 	}
-
 	.rangrezz-event-timeline ul li .rangrezz-single-event,
 	.rangrezz-event-timeline ul li:nth-child(2n+1) .rangrezz-single-event,
 	.rangrezz-event-timeline ul li:nth-child(2n) .rangrezz-single-event {
 		left: 30px;
 		width: 350px;
 	}
-
 	.rangrezz-event-timeline ul li .rangrezz-single-event h3 {
 		margin-bottom: 5px;
 		font-size: 14px;
 	}
-
 	.rangrezz-venue-address h4 {
 		font-size: 16px;
 	}
-
 	.rangrezz-register-content,
 	.rangrezz-contact-content {
 		padding: 0 5%;
 	}
-
 	.rangrezz-faq-content .panel-title {
 		font-size: 14px;
-	}
-					
-	
+	}	
 }
-
-
 @media (max-width: 360px) {
-
+	.rangrezz-single-speakers img{
+		margin-left: 7vw;
+	}
+	.mc{
+		margin-left: 10vw;
+	}
+	.slick-next{
+		top: 50vw;
+		left:78vw;
+	}
+	.slick-prev{
+		top: 50vw;
+	}
 	.rangrezz-logo img {
 		width: 120px;
 	}
@@ -1494,7 +1430,7 @@ canvas{
 	position:absolute;
 	min-height:330.2px;
 	min-width: 330.6px;
-    transform: translate(-50%);
+    transform: translate(-50%,20%);
     z-index: 5;
 }
 .image-logo img{
@@ -1515,8 +1451,9 @@ canvas{
 
 @media(max-width:668px)
 {
-	.timer-box{
-		left:31%;
+	.timer-box
+	{
+		left:28%;
 	width:40%;
 	height:40%;
 	top:75%;
@@ -1528,33 +1465,16 @@ canvas{
 		top:25vh;
 		width:40%;
 	height:40%;
-	}
-}
-@media(max-width:570px)
-{
-	.timer-box
-	{
-		left:22%;
-	width:40%;
-	height:40%;
-	top:75%;
-	font-size:155%;
-	}
-	.image-logo{
-		min-height:320.2px;
-		min-width: 320.6px;
-		top:24%;
-		width:50%;
-		height:50%;
+	transform: translate(-50%,0);
 	}
 }
 @media(max-width:610px)
 {
 	.timer-box
 	{
-		left:22%;
-	width:40%;
-	height:40%;
+		left:25%;
+	width:38%;
+	height:38%;
 	top:75%;
 	font-size:155%;
 	}
@@ -1575,6 +1495,7 @@ canvas{
 	height:40%;
 	top:70%;
 	font-size:130%;
+	transform:translate(24%,15%);
 	}
 	.image-logo{
 		min-height:320px;
@@ -1588,11 +1509,11 @@ canvas{
 {
 	.timer-box
 	{
-		left:-10%;
 	width:5vw;
 	height:5vw;
-	top:60%;
+	top:75%;
 	font-size:150%;
+	transform:translate(10vw);
 	}
 	.image-logo{
 		min-height:262.2px;
@@ -1605,11 +1526,11 @@ canvas{
 {
 	.timer-box
 	{
-		left:-8%;
 	width:5vw;
 	height:5vw;
 	top:65%;
 	font-size:150%;
+	transform:translate(5vw,15vw);
 	}
 	.image-logo{
 		min-height:240.2px;
@@ -1692,7 +1613,7 @@ canvas{
 #rangrezz-major-events {
 	background-color: #fff;
 	width: 100%;
-	margin-bottom: 6vh;
+	margin-bottom: 4vh;
 }
 #major-events{
 	text-align: center;
@@ -1703,19 +1624,20 @@ canvas{
 	animation:mycolor 3s infinite;
 }
 @keyframes mycolor{
-	form{
+	from{
 		color:#000000;
 	}
 	to{
 		color: maroon;
 	}
-}.card{
+}
+.card{
 	position: relative;
 	margin: auto;
 	top: 2vh;
 	height: 400px;
 	width: 325px;
-	transform-style: preserve-3d (768px);
+	transform-style: preserve-3d(768px);
 	perspective: 600px;
 	border-radius: 3px;
 	transition: 0.5s;
@@ -1732,7 +1654,7 @@ canvas{
   .card-front1{
 	height: 100%;
 	width: 100%;
-	background-image: url(./assets/images/required.png);
+	background-image: url(./assets/images/mjeve1.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	position: absolute;
@@ -1744,7 +1666,7 @@ canvas{
   .card-front2{
 	height: 100%;
 	width: 100%;
-	background-image: url(./assets/images/required.png);
+	background-image: url(./assets/images/mjeve2.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	position: absolute;
@@ -1763,29 +1685,41 @@ canvas{
 	color: #ffffff;
 	text-align: center;
   }
+  .card-back span{
+	  font-size: 3.5vh;
+  }
   .card-back h2{
-	margin: 60% auto 35% auto;
+	margin: 3% auto 35% auto;
 	font-size: 2.5vw;
   }
   .card-back a {
 	text-decoration: none;
-	font-size: 2vw;
+	font-size: 4.5vh;
   }
   .card-back a:hover{
 	  text-decoration: none;
 	  color: red;
   }
-  .mc img{
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-}
-.mc{
-	height: 420px;
-	width: 300px;
-	margin: 2%;
-	background: #eee;
-	border: 4px solid coral;
-	/* padding: 2%; */
-}
-
+  .footer{
+	  background-color: #000000;
+  }
+  .footer img{
+	  transform: translate(190%,-8%);
+	  height: 20%;
+	  width:20%; 
+  }
+  @media(max-width:800px)
+  {
+	.footer img{
+	transform: translate(150%,-8%);
+	height: 25%;
+	width: 25%;
+	}
+  }
+  .footer h2{
+	  color: coral;
+	  text-align: center;
+	  font-family: 'Satisfy', cursive;
+	  font-size: 4vw;
+	  padding-top: 1.2vw;
+	}
