@@ -375,8 +375,6 @@ canvas{
 	border-radius: 50%;
 	background: inherit;
 }
-
-
 .rangrezz-event-timeline ul li .rangrezz-single-event {
 	background-color: #fff;
 	-webkit-box-shadow: 0 0 16px 0 rgba(32,32,47,0.16);
@@ -450,46 +448,54 @@ canvas{
 /*--------------------*/
 /* MINOR EVENTS*/
 /*--------------------*/
-
+.container-x{
+	width: 90vw;
+	margin: auto;
+}
 #rangrezz-minor-events {
 	background-color: #fff;
-	display: inline;
 	width: 100%;
+	height: 100vh!important;
 }
-.rangrezz-speakers-content{
-	display: inline;
-	float: left;
-	margin-top: 50px;
-	width: 100%;
+.rangrezz-speakers-slider{
+	margin-top:0%;
+	height: 100vh;
+	width: 90vw;
+	padding: 10%;
 }
-.minor{
-	margin-top: 8vh;
-}
-.rangrezz-single-speakers {
+.minor-events {
 	padding: 0 10px;
 	text-align: center;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-.rangrezz-single-speakers img{
-	height: 60vh;
+.minor-events img{
+	height: 400px;
+	width: 300px;
+	
 }
 .slick-next {
-	right: -80px;
-	top:15vw;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
 }
 .slick-prev {
-	left: -80px;
-	top:15vw;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
 }
-.rangrezz-single-speakers-info {
+.events-name {
 	margin-top: 20px;
 	width: 100%;
-	color: #000000;
+	color: #1b1b1b;
 }
-.rangrezz-single-speakers-info h3 {
-	font-size: 4vh;
-}
+.events-name h3 {
+	font-size: 2rem;
+	}
 /*--------------------*/
 /* VENUE */
 /*--------------------*/
@@ -509,11 +515,9 @@ canvas{
 	float: left;
 	width: 100%;
 }
-
 .rangrezz-venue-map iframe {
 	margin-bottom: -8px;
 }
-
 .rangrezz-venue-address {
 	display: inline;
 	float: left;
@@ -1520,7 +1524,6 @@ canvas{
 		min-width: 333px;
 		top:24vh;
 	}
-	
 }
 @media(max-width:500px)
 {
@@ -1537,7 +1540,6 @@ canvas{
 		min-width: 333px;
 		top:24vh;
 	}
-	
 }
 #time-1{
     background-color: #db0fd8;
@@ -1624,11 +1626,16 @@ canvas{
 	animation:mycolor 3s infinite;
 }
 @keyframes mycolor{
-	from{
-		color:#000000;
-	}
-	to{
+	0%{
 		color: maroon;
+	}
+	50%{
+		color: #1b1b1b;
+		transition: 1.5s;
+	}
+	100%{
+		color: maroon;
+		transition: 1.5s;
 	}
 }
 .card{
@@ -1678,48 +1685,38 @@ canvas{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: #000000;
+	background-color: #292525;
 	backface-visibility: hidden;
 	transform: rotateX(180deg);
 	transition: 0.5s;
 	color: #ffffff;
 	text-align: center;
   }
-  .card-back span{
-	  font-size: 3.5vh;
+  .card-back .logo-text{
+	font-family: 'Kurale', serif;
+	  font-size: 3rem;
+
   }
   .card-back h2{
-	margin: 3% auto 35% auto;
-	font-size: 2.5vw;
+	font-family: 'Kurale', serif;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+  .logo-text{
+	  color: #e6683c;
   }
   .card-back a {
+	font-family: 'Kurale', serif;
 	text-decoration: none;
-	font-size: 4.5vh;
+	font-size: 2rem;
+	color:  #e6683c;
   }
   .card-back a:hover{
 	  text-decoration: none;
-	  color: red;
+	  color: #e6a400;
   }
-  .footer{
-	  background-color: #000000;
-  }
-  .footer img{
-	  transform: translate(190%,-8%);
-	  height: 20%;
-	  width:20%; 
-  }
-  @media(max-width:800px)
-  {
-	.footer img{
-	transform: translate(150%,-8%);
-	height: 25%;
-	width: 25%;
-	}
-  }
-  .footer h2{
-	  color: coral;
-	  text-align: center;
-	  font-family: 'Satisfy', cursive;
-	  font-size: 4vw;
-	  padding-top: 1.2vw;
-	}
